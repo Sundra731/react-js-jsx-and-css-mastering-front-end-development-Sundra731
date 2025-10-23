@@ -201,9 +201,9 @@ The application is fully responsive and works seamlessly across:
 
 ## Deployment
 
-This application is deployed on [Vercel/Netlify - Add URL after deployment]
+This application is deployed on GitHub Pages.
 
-**Live Demo**: [Add your deployment URL here]
+**Live Demo**: https://sundra731.github.io/react-js-jsx-and-css-mastering-front-end-development-Sundra731/
  
 
 ## License
