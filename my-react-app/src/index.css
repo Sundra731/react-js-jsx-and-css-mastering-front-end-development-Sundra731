@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+      background-color: white;
+      color: black;
+    }
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition-property: background-color, border-color, color, transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slide-in 0.3s ease-out;
+}
+
+/* Hover effects */
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(0);
+}
